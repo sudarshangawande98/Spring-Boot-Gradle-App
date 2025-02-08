@@ -20,14 +20,12 @@ dependencies {
 }
 
 bootWar {
-    archiveBaseName.set('my-app')
     mainClass.set('com.mycompany.app.MainApplication')
 }
 
 // Plugin configurations equivalent to Maven plugins
 war {
     enabled = true
-    archiveFileName.set('my-app.war')
 }
 
 tasks.withType(JavaCompile) {
